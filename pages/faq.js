@@ -1,35 +1,64 @@
+import { useState } from 'react'
+
+const faqs = [
+  {
+    question: 'Who can benefit from speaking to Divorce Companion?',
+    answer:
+      'Anyone who is facing challenges in their marriage, unsure about divorce, or already going through separation can benefit from our empathetic guidance.',
+  },
+  {
+    question: 'What kind of support do you provide?',
+    answer:
+      'We provide emotional support, practical guidance, document and case assistance, and help you make informed decisions while navigating your journey.',
+  },
+  {
+    question: 'Is it confidential?',
+    answer: 'Absolutely. All conversations are confidential and conducted in a safe, non-judgmental space.',
+  },
+  {
+    question: 'Do I have to commit to divorce to speak to you?',
+    answer:
+      'Not at all. You can reach out whether you’re just exploring options, seeking clarity, or processing your feelings about your marriage or potential separation.',
+  },
+  {
+    question: 'How do I book a session?',
+    answer:
+      'Simply click on the “Book a Session” button, select a suitable time, and we’ll connect with you for a supportive conversation.',
+  },
+]
+
 export default function FAQ() {
-  const faqs = [
-    {
-      question: 'What is a Divorce Companion?',
-      answer:
-        'A Divorce Companion provides guidance, emotional support, and practical advice throughout the divorce journey.',
-    },
-    {
-      question: 'How can I book a consultation?',
-      answer: 'You can book a session via our Book Consultation page using Cal.com or Calendly widget.',
-    },
-    {
-      question: 'Do you provide legal advice?',
-      answer:
-        'We provide guidance and suggestions but do not replace a licensed lawyer. We help you understand options and next steps.',
-    },
-    {
-      question: 'Is my consultation confidential?',
-      answer: 'Absolutely. All sessions are private and your information is handled with the utmost confidentiality.',
-    },
-  ]
+  const [openIndex, setOpenIndex] = useState(null)
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index)
+  }
 
   return (
-    <div className='max-w-4xl mx-auto px-4 py-12'>
-      <h1 className='text-3xl font-bold text-blue-800 mb-8'>Frequently Asked Questions</h1>
-      <div className='space-y-6'>
-        {faqs.map((faq, index) => (
-          <div key={index} className='border p-4 rounded-lg shadow hover:shadow-lg transition'>
-            <h2 className='font-semibold text-lg'>{faq.question}</h2>
-            <p className='text-gray-700 mt-2'>{faq.answer}</p>
-          </div>
-        ))}
+    <div className='min-h-screen bg-gray-50 py-12'>
+      <div className='max-w-5xl mx-auto px-4'>
+        <h1 className='text-3xl md:text-4xl font-bold text-blue-800 mb-8 text-center'>Frequently Asked Questions</h1>
+
+        <div className='space-y-4'>
+          {faqs.map((faq, index) => (
+            <div key={index} className='bg-white p-4 rounded-lg shadow hover:shadow-lg transition'>
+              <button
+                onClick={() => toggle(index)}
+                className='w-full text-left flex justify-between items-center text-gray-800 font-semibold text-lg'
+              >
+                {faq.question}
+                <span>{openIndex === index ? '-' : '+'}</span>
+              </button>
+              {openIndex === index && <p className='mt-2 text-gray-700'>{faq.answer}</p>}
+            </div>
+          ))}
+        </div>
+
+        <div className='text-center mt-10'>
+          <a href='/book' className='px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
+            Book a Session & Speak to Us
+          </a>
+        </div>
       </div>
     </div>
   )

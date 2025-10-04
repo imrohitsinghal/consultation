@@ -1,22 +1,40 @@
 export default function Contact() {
   return (
-    <div className='max-w-4xl mx-auto px-4 py-12'>
-      <h1 className='text-3xl font-bold text-blue-800 mb-6'>Contact Us</h1>
-      <p className='mb-6 text-gray-700'>
-        Reach out for support, guidance, or to book a consultation. We are here to help you navigate this journey.
-      </p>
-      <form className='space-y-4'>
-        <input type='text' placeholder='Name' className='w-full p-3 border rounded-lg' />
-        <input type='email' placeholder='Email' className='w-full p-3 border rounded-lg' />
-        <input type='tel' placeholder='Phone' className='w-full p-3 border rounded-lg' />
-        <textarea placeholder='Message' className='w-full p-3 border rounded-lg h-32'></textarea>
-        <button className='px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition'>
-          Send Message
-        </button>
-      </form>
-      <div className='mt-8 text-gray-700'>
-        <p>Email: support@divorcecompanion.in</p>
-        <p>WhatsApp: +91-XXXXXXXXXX</p>
+    <div className='min-h-screen bg-gray-50 py-12'>
+      <div className='max-w-3xl mx-auto px-4'>
+        <h1 className='text-3xl md:text-4xl font-bold text-blue-800 mb-8 text-center'>Contact Us</h1>
+
+        <p className='text-gray-700 mb-6 text-lg'>
+          We’re here to listen, guide, and support you — whether you’re facing challenges in your marriage or navigating
+          the divorce process. Reach out today, and take the first step toward relief and clarity.
+        </p>
+
+        <form className='bg-white p-6 rounded-lg shadow space-y-4'>
+          <div>
+            <label className='block text-gray-700 mb-2'>Name</label>
+            <input type='text' placeholder='Your Name' className='w-full border border-gray-300 rounded-md p-2' />
+          </div>
+          <div>
+            <label className='block text-gray-700 mb-2'>Email</label>
+            <input type='email' placeholder='Your Email' className='w-full border border-gray-300 rounded-md p-2' />
+          </div>
+          <div>
+            <label className='block text-gray-700 mb-2'>Message</label>
+            <textarea
+              placeholder='Your Message'
+              className='w-full border border-gray-300 rounded-md p-2 h-32'
+            ></textarea>
+          </div>
+          <div className='text-center'>
+            <button className='px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
+              Send Message
+            </button>
+          </div>
+        </form>
+
+        <div className='text-center mt-8 text-gray-700'>
+          Or reach us at: <strong>support@divorcecompanion.com</strong>
+        </div>
       </div>
     </div>
   )
