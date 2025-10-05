@@ -1,6 +1,2 @@
-node_modules
-.next
-.next/*
-.next/prerender-manifest.json
-.next/trace
-.next/trace
+node_modules/
+.next/
