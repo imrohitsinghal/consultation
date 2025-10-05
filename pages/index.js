@@ -15,10 +15,10 @@ export default function Home() {
             and our mission is to make sure no one feels alone.
           </p>
           <div className='flex flex-col sm:flex-row justify-center gap-4'>
-            <Link href='/book' className='px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
+            <Link href='/book' className='btn-primary'>
               Speak to Us Today
             </Link>
-            <Link href='/services' className='px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition'>
+            <Link href='/services' className='btn-primary-blue'>
               Learn How We Can Help
             </Link>
           </div>
@@ -34,10 +34,10 @@ export default function Home() {
             resources tailored for you.
           </p>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-            {/* Phase 1: Discernment */}
-            <div className='bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition text-left'>
-              <h3 className='text-xl font-semibold text-blue-800 mb-3'>Phase 1: Discernment</h3>
-              <p className='text-gray-700 mb-4'>
+            {/* Phase 1 Card */}
+            <div className='card'>
+              <h3 className='card-title'>Phase 1: Discernment</h3>
+              <p className='card-text'>
                 Feeling unhappy in your marriage or unsure if divorce is the right step? Explore guidance to help you
                 find clarity and confidence.
               </p>
@@ -46,10 +46,10 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Phase 2: Active Separation */}
-            <div className='bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition text-left'>
-              <h3 className='text-xl font-semibold text-blue-800 mb-3'>Phase 2: Active Separation</h3>
-              <p className='text-gray-700 mb-4'>
+            {/* Phase 2 Card */}
+            <div className='card'>
+              <h3 className='card-title'>Phase 2: Separation</h3>
+              <p className='card-text'>
                 Already in the divorce process? Get emotional support, legal clarity, and financial guidance to manage
                 this stage with strength.
               </p>
@@ -58,10 +58,10 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Phase 3: Rebuilding */}
-            <div className='bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition text-left'>
-              <h3 className='text-xl font-semibold text-blue-800 mb-3'>Phase 3: Rebuilding</h3>
-              <p className='text-gray-700 mb-4'>
+            {/* Phase 3 Card */}
+            <div className='card'>
+              <h3 className='card-title'>Phase 3: Rebuilding</h3>
+              <p className='card-text'>
                 Life after divorce can be overwhelming, but it’s also a chance to rebuild. Discover support for
                 emotional healing, co-parenting, and financial recovery.
               </p>
@@ -122,7 +122,7 @@ export default function Home() {
             </div>
           </div>
           <div className='mt-10'>
-            <Link href='/book' className='px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
+            <Link href='/book' className='btn-primary'>
               Book a Session & Feel Relief
             </Link>
           </div>

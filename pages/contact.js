@@ -26,7 +26,7 @@ export default function Contact() {
             ></textarea>
           </div>
           <div className='text-center'>
-            <button className='px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
+            <button className='btn-primary' type='submit'>
               Send Message
             </button>
           </div>

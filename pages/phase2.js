@@ -29,10 +29,10 @@ export default function Phase2() {
         </p>
 
         <div className='text-center mt-8'>
-          <Link href='/book' className='px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
+          <Link href='/book' className='btn-primary'>
             Book a Support Session
           </Link>
-          <Link href='/' className='px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition'>
+          <Link href='/' className='btn-secondary'>
             ← Back to All Phases
           </Link>
         </div>

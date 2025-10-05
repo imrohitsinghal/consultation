@@ -51,7 +51,7 @@ export default function Navbar() {
               Contact
             </Link>
 
-            <Link href='/book' className='px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
+            <Link href='/book' className='btn-primary'>
               Book
             </Link>
           </div>
