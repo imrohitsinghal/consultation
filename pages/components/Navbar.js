@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [phaseOpen, setPhaseOpen] = useState(false)
 
   return (
     <nav className='bg-white shadow-md sticky top-0 z-50'>
@@ -23,6 +24,23 @@ export default function Navbar() {
             <Link href='/about' className='hover:text-blue-600'>
               About
             </Link>
+            {/* Dropdown for Phases */}
+            <div className='relative' onMouseEnter={() => setPhaseOpen(true)} onMouseLeave={() => setPhaseOpen(false)}>
+              <button className='hover:text-blue-600 flex items-center'>Phases ▾</button>
+              {phaseOpen && (
+                <div className='absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-lg'>
+                  <Link href='/phase1' className='block px-4 py-2 hover:bg-blue-50'>
+                    Phase 1: Discernment
+                  </Link>
+                  <Link href='/phase2' className='block px-4 py-2 hover:bg-blue-50'>
+                    Phase 2: Separation
+                  </Link>
+                  <Link href='/phase3' className='block px-4 py-2 hover:bg-blue-50'>
+                    Phase 3: Rebuilding
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link href='/services' className='hover:text-blue-600'>
               Services
             </Link>
@@ -32,6 +50,7 @@ export default function Navbar() {
             <Link href='/contact' className='hover:text-blue-600'>
               Contact
             </Link>
+
             <Link href='/book' className='px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
               Book
             </Link>
@@ -74,6 +93,21 @@ export default function Navbar() {
           <Link href='/contact' className='block hover:text-blue-600'>
             Contact
           </Link>
+
+          {/* Mobile Dropdown for Phases */}
+          <div>
+            <p className='font-semibold text-gray-800 mt-2'>Phases</p>
+            <Link href='/phase1' className='block pl-4 hover:text-blue-600'>
+              Phase 1: Discernment
+            </Link>
+            <Link href='/phase2' className='block pl-4 hover:text-blue-600'>
+              Phase 2: Separation
+            </Link>
+            <Link href='/phase3' className='block pl-4 hover:text-blue-600'>
+              Phase 3: Rebuilding
+            </Link>
+          </div>
+
           <Link
             href='/book'
             className='block px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'

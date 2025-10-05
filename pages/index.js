@@ -10,10 +10,9 @@ export default function Home() {
             You’re Not Alone- Here to Listen, Guide, and Support You
           </h1>
           <p className='text-gray-700 mb-8 text-lg md:text-xl'>
-            Whether you’re unsure about your marriage, feeling unhappy, or already going through a divorce, it’s normal
-            to feel stressed, anxious, or overwhelmed. We understand — because we’ve been there.{' '}
-            <strong>Divorce Companion</strong> is a team of people who have walked this path and are here to guide you,
-            support you, and help you regain clarity and peace of mind.
+            Whether you’re uncertain about your marriage, in the middle of a divorce, or finding your way forward after
+            separation —<strong> Divorce Companion</strong> is here to walk with you. We’ve lived through it ourselves,
+            and our mission is to make sure no one feels alone.
           </p>
           <div className='flex flex-col sm:flex-row justify-center gap-4'>
             <Link href='/book' className='px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition'>
@@ -22,6 +21,54 @@ export default function Home() {
             <Link href='/services' className='px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition'>
               Learn How We Can Help
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase Options Section */}
+      <section className='py-16 bg-white'>
+        <div className='max-w-6xl mx-auto px-4 text-center'>
+          <h2 className='text-3xl font-bold text-blue-800 mb-10'>Choose Your Path</h2>
+          <p className='text-gray-700 mb-12 text-lg'>
+            Every journey is different. Select the stage that best reflects where you are right now, and explore
+            resources tailored for you.
+          </p>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+            {/* Phase 1: Discernment */}
+            <div className='bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition text-left'>
+              <h3 className='text-xl font-semibold text-blue-800 mb-3'>Phase 1: Discernment</h3>
+              <p className='text-gray-700 mb-4'>
+                Feeling unhappy in your marriage or unsure if divorce is the right step? Explore guidance to help you
+                find clarity and confidence.
+              </p>
+              <Link href='/phase1' className='text-green-600 font-semibold hover:underline'>
+                Explore Discernment →
+              </Link>
+            </div>
+
+            {/* Phase 2: Active Separation */}
+            <div className='bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition text-left'>
+              <h3 className='text-xl font-semibold text-blue-800 mb-3'>Phase 2: Active Separation</h3>
+              <p className='text-gray-700 mb-4'>
+                Already in the divorce process? Get emotional support, legal clarity, and financial guidance to manage
+                this stage with strength.
+              </p>
+              <Link href='/phase2' className='text-green-600 font-semibold hover:underline'>
+                Explore Separation →
+              </Link>
+            </div>
+
+            {/* Phase 3: Rebuilding */}
+            <div className='bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition text-left'>
+              <h3 className='text-xl font-semibold text-blue-800 mb-3'>Phase 3: Rebuilding</h3>
+              <p className='text-gray-700 mb-4'>
+                Life after divorce can be overwhelming, but it’s also a chance to rebuild. Discover support for
+                emotional healing, co-parenting, and financial recovery.
+              </p>
+              <Link href='/phase3' className='text-green-600 font-semibold hover:underline'>
+                Explore Rebuilding →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
