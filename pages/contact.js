@@ -33,7 +33,7 @@ export default function Contact() {
         </form>
 
         <div className='text-center mt-8 text-gray-700'>
-          Or reach us at: <strong>support@divorcecompanion.com</strong>
+          Or reach us at: <strong>support@truetomo.com</strong>
         </div>
       </div>
     </div>

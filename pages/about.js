@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className='min-h-screen bg-gray-50 py-12'>
       <div className='max-w-5xl mx-auto px-4'>
-        <h1 className='text-3xl md:text-4xl font-bold text-blue-800 mb-6 text-center'>About Divorce Companion</h1>
+        <h1 className='text-3xl md:text-4xl font-bold text-blue-800 mb-6 text-center'>About True Tomo</h1>
 
         <p className='text-gray-700 mb-6 text-lg font-bold'>
           Divorce is one of life’s most challenging transitions. We understand — because we’ve been there.
@@ -10,7 +10,7 @@ export default function About() {
         <p className='text-gray-700 mb-6 text-lg' >
           Whether you’re feeling unsure about your marriage, unhappy with your current situation, or already going
           through a divorce, it’s perfectly normal to feel stressed, anxious, or overwhelmed. You don’t have to face it
-          alone. Divorce Companion was created by a team of individuals who have personally navigated both the struggles
+          alone. True Tomo was created by a team of individuals who have personally navigated both the struggles
           of challenging marriages and the divorce process. Our mission is simple: to ensure nobody has to endure this
           journey in isolation or with unnecessary stress.
         </p>

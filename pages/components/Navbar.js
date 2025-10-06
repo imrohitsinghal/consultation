@@ -12,7 +12,7 @@ export default function Navbar() {
           {/* Logo / Brand */}
           <div className='flex-shrink-0'>
             <Link href='/'>
-              <span className='text-2xl font-bold text-blue-800 cursor-pointer'>Divorce Companion</span>
+              <span className='text-2xl font-bold text-blue-800 cursor-pointer'>True Tomo</span>
             </Link>
           </div>
 

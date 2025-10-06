@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: 'Who can benefit from speaking to Divorce Companion?',
+    question: 'Who can benefit from speaking to True Tomo?',
     answer:
       'Anyone who is facing challenges in their marriage, unsure about divorce, or already going through separation can benefit from our empathetic guidance.',
   },

@@ -8,7 +8,7 @@ export default function Services() {
           confidence.
         </p>
         <p className='text-gray-700 mb-6 text-lg'>
-          At Divorce Companion, we provide a range of supportive services for anyone facing challenges in their marriage
+          At True Tomo, we provide a range of supportive services for anyone facing challenges in their marriage
           or navigating the divorce process. Our goal is to make you feel understood, guided, and supported every step
           of the way.
         </p>

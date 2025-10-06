@@ -11,7 +11,7 @@ export default function Phase1() {
 
         <p className='text-gray-700 mb-6 text-lg'>
           Are you feeling unhappy in your marriage, uncertain about your relationship, or wondering if divorce is the
-          right step? You’re not alone. Many people struggle with these questions silently. At Divorce Companion, we
+          right step? You’re not alone. Many people struggle with these questions silently. At True Tomo, we
           provide a safe and empathetic space to explore your feelings and options without pressure or judgment.
         </p>
 

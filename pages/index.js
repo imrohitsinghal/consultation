@@ -11,7 +11,7 @@ export default function Home() {
           </h1>
           <p className='text-gray-700 mb-8 text-lg md:text-xl'>
             Whether you’re uncertain about your marriage, in the middle of a divorce, or finding your way forward after
-            separation —<strong> Divorce Companion</strong> is here to walk with you. We’ve lived through it ourselves,
+            separation —<strong> True Tomo</strong> is here to walk with you. We’ve lived through it ourselves,
             and our mission is to make sure no one feels alone.
           </p>
           <div className='flex flex-col sm:flex-row justify-center gap-4'>
